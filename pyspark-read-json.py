@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-author SparkByExamples.com
+author nubeera.com
 """
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType,StructField, StringType, IntegerType,BooleanType,DoubleType
 spark = SparkSession.builder \
     .master("local[1]") \
-    .appName("SparkByExamples.com") \
+    .appName("nubeera.com") \
     .getOrCreate()
 
 # Read JSON file into dataframe    

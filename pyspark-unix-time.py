@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-author SparkByExamples.com
+author nubeera.com
 """
 
 from pyspark.sql import SparkSession
 
 # Create SparkSession
 spark = SparkSession.builder \
-          .appName('SparkByExamples.com') \
+          .appName('nubeera.com') \
           .getOrCreate()
 
 inputData = [("2019-07-01 12:01:19",

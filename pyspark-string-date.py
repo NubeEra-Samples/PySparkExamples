@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 """
-author SparkByExamples.com
+author nubeera.com
 """
 
 # -*- coding: utf-8 -*-
 """
-author SparkByExamples.com
+author nubeera.com
 """
 
 from pyspark.sql import SparkSession
 
 # Create SparkSession
 spark = SparkSession.builder \
-               .appName('SparkByExamples.com') \
+               .appName('nubeera.com') \
                .getOrCreate()
 
 from pyspark.sql.functions import *

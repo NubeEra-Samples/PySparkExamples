@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-author SparkByExamples.com
+author nubeera.com
 """
 
 
 from pyspark.sql import SparkSession
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.appName('nubeera.com').getOrCreate()
 
 columns = ["name","languagesAtSchool","currentState"]
 data = [("James,,Smith",["Java","Scala","C++"],"CA"), \

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-author SparkByExamples.com
+author nubeera.com
 """
 
 import pandas as pd    
@@ -16,7 +16,7 @@ from pyspark.sql import SparkSession
 
 spark = SparkSession.builder \
     .master("local[1]") \
-    .appName("SparkByExamples.com") \
+    .appName("nubeera.com") \
     .getOrCreate()
 
 sparkDF=spark.createDataFrame(pandasDF) 

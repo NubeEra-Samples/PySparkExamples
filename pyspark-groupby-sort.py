@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-author SparkByExamples.com
+author nubeera.com
 """
 
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col,sum,avg,max
 
 spark = SparkSession.builder \
-                    .appName('SparkByExamples.com') \
+                    .appName('nubeera.com') \
                     .getOrCreate()
 
 simpleData = [("James","Sales","NY",90000,34,10000),

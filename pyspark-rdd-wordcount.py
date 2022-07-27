@@ -4,8 +4,8 @@ Created on Sun Jun 14 10:20:19 2020
 """
 
 from pyspark.sql import SparkSession
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
-rdd = spark.sparkContext.textFile("/apps/sparkbyexamples/src/pyspark-examples/data.txt")
+spark = SparkSession.builder.appName('nubeera.com').getOrCreate()
+rdd = spark.sparkContext.textFile("/apps/nubeera/src/pyspark-examples/data.txt")
 
 for element in rdd.collect():
     print(element)

@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-author SparkByExamples.com
+author nubeera.com
 """
 
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder \
     .master("local[1]") \
-    .appName("SparkByExamples.com") \
+    .appName("nubeera.com") \
     .getOrCreate()
 data = [('Scott', 50), ('Jeff', 45), ('Thomas', 54),('Ann',34)] 
 sparkDF=spark.createDataFrame(data,["name","age"]) 

@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-author SparkByExamples.com
+author nubeera.com
 """
 
 import pyspark
 from pyspark.sql import SparkSession
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.appName('nubeera.com').getOrCreate()
 
 simpleData = (("James", "Sales", 3000), \
     ("Michael", "Sales", 4600),  \

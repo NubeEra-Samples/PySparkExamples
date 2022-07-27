@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-author SparkByExamples.com
+author nubeera.com
 """
 
 import pyspark
@@ -9,7 +9,7 @@ from pyspark.sql.types import StructType,StructField, StringType, IntegerType,Ar
 from pyspark.sql.functions import col,struct,when
 
 spark = SparkSession.builder.master("local[1]") \
-                    .appName('SparkByExamples.com') \
+                    .appName('nubeera.com') \
                     .getOrCreate()
 
 data = [("James","","Smith","36636","M",3000),

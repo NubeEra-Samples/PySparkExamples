@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-author SparkByExamples.com
+author nubeera.com
 """
 
 
 from pyspark.sql import SparkSession
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.appName('nubeera.com').getOrCreate()
 
 dept = [("Finance",10), \
     ("Marketing",20), \

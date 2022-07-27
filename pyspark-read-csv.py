@@ -11,20 +11,20 @@ from pyspark.sql.types import StructType,StructField, StringType, IntegerType
 from pyspark.sql.types import ArrayType, DoubleType, BooleanType
 from pyspark.sql.functions import col,array_contains
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.appName('nubeera.com').getOrCreate()
 
-df = spark.read.csv("C:/apps/sparkbyexamples/src/pyspark-examples/resources/zipcodes.csv")
+df = spark.read.csv("C:/apps/nubeera/src/pyspark-examples/resources/zipcodes.csv")
 
 df.printSchema()
 
 df2 = spark.read.option("header",True) \
-     .csv("C:/apps/sparkbyexamples/src/pyspark-examples/resources/zipcodes.csv")
+     .csv("C:/apps/nubeera/src/pyspark-examples/resources/zipcodes.csv")
 df2.printSchema()
    
 
 
 df3 = spark.read.options(header='True', delimiter=',') \
-  .csv("C:/apps/sparkbyexamples/src/pyspark-examples/resources/zipcodes.csv")
+  .csv("C:/apps/nubeera/src/pyspark-examples/resources/zipcodes.csv")
 df3.printSchema()
 
 
@@ -53,7 +53,7 @@ schema = StructType() \
 df_with_schema = spark.read.format("csv") \
       .option("header", True) \
       .schema(schema) \
-      .load("C:/apps/sparkbyexamples/src/pyspark-examples/resources/zipcodes.csv")
+      .load("C:/apps/nubeera/src/pyspark-examples/resources/zipcodes.csv")
 df_with_schema.printSchema()
 
 df2.write.option("header",True) \
